@@ -1,0 +1,2 @@
+# WGC
+wintell gamesa collector
