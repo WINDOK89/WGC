@@ -24,6 +24,24 @@ It should be ok by now
 2. auto run of das
 - in cmd use: cd ....das...
 - in cmd use: das.exe /CfgFile=C:\das_110.cfg
+"C:\Program Files (x86)\Das\das.exe" /CfgFile=C:\das_110.cfg
 
 3. VNC
 
+just download and install tightvncserver, set a password and that's it
+
+4. make sure program run at start up
+
+just check in task manager if tightvnc and ftp filezilla are in the list
+
+5. run a certain command at startup
+https://www.computerhope.com/issues/ch000322.htm
+in the batch file put: "C:\Program Files (x86)\Das\das.exe" /CfgFile=C:\das_110.cfg
+
+6. automatic login
+if not set up das will not start
+https://www.ghacks.net/2014/12/28/sign-in-to-a-windows-10-account-automatically-on-start/
+
+7. auto start when power is plugged
+first to know how to go to bios on Z83: https://www.isunshare.com/windows-password/four-methods-to-access-uefi-bios-setup.html (use cmd line way)
+http://www.technewsworld.com/story/78930.html
