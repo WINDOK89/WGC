@@ -45,3 +45,6 @@ https://www.ghacks.net/2014/12/28/sign-in-to-a-windows-10-account-automatically-
 7. auto start when power is plugged
 first to know how to go to bios on Z83: https://www.isunshare.com/windows-password/four-methods-to-access-uefi-bios-setup.html (use cmd line way)
 in bios boot option you'll find "automatic power on" disabled: enabled it than save and exit
+
+8. secure from hdmi
+https://www.howtogeek.com/howto/29410/beginner-automatically-lock-your-computer-when-youre-away/
