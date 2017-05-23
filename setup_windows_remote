@@ -1,0 +1,29 @@
+Windows is most certainly the biggest boolshit for this, much easier with linux. But our main programm communicating with G90 team controller connot run under debian
+
+1. FTP
+
+Download and install Filezilla server, no special things to do there just set it up as defualt
+run filezilla admin server  GUI
+- edit settings
+  - passive mode settings
+  - check "use custiom port range", put from 1 to 
+  - external server IP as default
+  uncheck "don't use external IP..."
+  - miscalineous
+    - check start minimalized
+- create than group and user on the D drive where WGC data will be.
+- lot of crazy stuff to do now in firewall settings:
+  - in windows firewall advanced settings inbound, enable "file and printer sharing (echo request ICMPv4-in)" private and public
+  - in windows program feature, turn on "internet info service/FTP server/ftp service" and internet "info service/web management tool/IIS management console"
+  - in windows firewall advanced settings inbound, enable also the 3 FTP server stuff
+  - still in advanced setting, create a new inbound rule with followning parameter: port, tcp, specified port 20, 21 and finally give a name
+  - in windows firewall, allow another programm and browse to filezilla server app.
+
+It should be ok by now
+
+2. auto run of das
+- in cmd use: cd ....das...
+- in cmd use: das.exe /CfgFile=C:\das_110.cfg
+
+3. VNC
+
